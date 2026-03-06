@@ -5,6 +5,8 @@ import { MetricCard } from '@/components/ui/MetricCard';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { personalInfo, metrics } from '@/data/personal';
 
+const basePath = process.env.NODE_ENV === 'production' ? '/ai-portfolio-hub' : '';
+
 export function Hero() {
   return (
     <Section className="pt-32 md:pt-40">
@@ -44,13 +46,12 @@ export function Hero() {
 
         <AnimatedSection delay={0.15} className="hidden md:block">
           <div className="mx-auto h-64 w-64 overflow-hidden rounded-full border-2 border-border-subtle">
-            <Image
-              src="/images/headshot.jpg"
+            <img
+              src={`${basePath}/images/headshot.jpg`}
               alt="Oguzhan Durace"
               width={256}
               height={256}
               className="h-full w-full object-cover object-top"
-              priority
             />
           </div>
         </AnimatedSection>

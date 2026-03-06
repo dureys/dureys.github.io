@@ -27,7 +27,7 @@ export function Contact() {
               href={`mailto:${personalInfo.email}`}
               variant="primary"
             >
-              Email Me
+              Email
             </Button>
             <Button
               href={personalInfo.linkedin}
@@ -47,11 +47,24 @@ export function Contact() {
             </Button>
           </div>
 
-          <div className="mt-8 space-y-1 text-xs text-text-muted">
-            <p>{personalInfo.email}</p>
-            <p>{personalInfo.phone}</p>
-            <p>{personalInfo.location}</p>
+          <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:justify-center sm:gap-8">
+            <a
+              href={`mailto:${personalInfo.email}`}
+              className="text-lg font-medium text-text-primary transition-colors hover:text-accent"
+            >
+              {personalInfo.email}
+            </a>
+            <span className="hidden text-border-subtle sm:inline">|</span>
+            <a
+              href={`tel:${personalInfo.phone?.replace(/\s/g, '')}`}
+              className="text-lg font-medium text-text-primary transition-colors hover:text-accent"
+            >
+              {personalInfo.phone}
+            </a>
           </div>
+          <p className="mt-3 text-sm text-text-muted">
+            {personalInfo.location}
+          </p>
         </div>
       </AnimatedSection>
     </Section>
