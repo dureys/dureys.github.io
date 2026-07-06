@@ -21,7 +21,7 @@ export const skillGroups: SkillGroup[] = [
       'FastAPI',
       'React / Next.js',
       'REST APIs',
-      'Git / CI-CD',
+      'Git / CI/CD',
     ],
   },
   {

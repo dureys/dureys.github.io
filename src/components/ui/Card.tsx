@@ -40,8 +40,8 @@ export function Card({ project, className, badgeLabel }: CardProps) {
 
       <details className="group/details mb-4">
         <summary className="cursor-pointer list-none font-mono text-xs text-text-muted transition-colors hover:text-accent">
-          <span className="group-open/details:hidden">+ how it works</span>
-          <span className="hidden group-open/details:inline">− how it works</span>
+          <span className="group-open/details:hidden">▸ how it works</span>
+          <span className="hidden group-open/details:inline">▾ how it works</span>
         </summary>
         <p className="mt-2 border-l border-border-subtle pl-3 text-sm leading-relaxed text-text-secondary">
           {project.longDescription}

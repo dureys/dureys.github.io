@@ -9,7 +9,7 @@ export const experiences: Experience[] = [
     location: 'Berlin, Germany',
     isCurrent: true,
     highlight:
-      'Shipped the lead engine (+40% conversion) and the support AI (−60% triage time) — both in production.',
+      'Shipped the lead engine (40% more conversion) and the support AI (60% less triage time), both in production.',
     summary:
       'Leading Generative AI and intelligent automation initiatives across sales, procurement, logistics, and support. Owning the full consulting cycle from process discovery and solution design through implementation, validation against KPIs, and production rollout.',
     achievements: [
@@ -36,7 +36,7 @@ export const experiences: Experience[] = [
     period: 'Apr 2023 to Aug 2024',
     location: 'Berlin, Germany',
     highlight:
-      'Migrated a Shell subsidiary’s entire Salesforce org — 5 departments, phased rollout, minimal disruption.',
+      'Migrated a Shell subsidiary’s entire Salesforce org: 5 departments, phased rollout, minimal disruption.',
     summary:
       'Led a full scale digital transformation of the Salesforce environment for a Shell subsidiary. Owned the product roadmap, gathered business requirements across departments, managed cross functional stakeholders, and drove adoption through structured change management.',
     achievements: [
@@ -85,7 +85,7 @@ export const experiences: Experience[] = [
     period: 'Jul 2019 to Jun 2021',
     location: 'Berlin, Germany',
     highlight:
-      'Built the Salesforce processes a scale-up ran on daily — validation rules, approvals, automation flows.',
+      'Built the Salesforce processes a startup ran on daily: validation rules, approvals, automation flows.',
     summary:
       'Managed product backlogs and Salesforce process optimization. Designed validation rules, approval workflows, and automation flows while aligning commercial and technical requirements across teams.',
     achievements: [

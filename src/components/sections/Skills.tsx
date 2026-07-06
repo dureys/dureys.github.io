@@ -14,7 +14,7 @@ export function Skills() {
           The Working Set
         </h3>
         <p className="mb-12 max-w-xl text-sm text-text-secondary">
-          What I actually ship with — not every logo I have ever touched.
+          What I actually ship with, not every logo I have ever touched.
           If it is on this list, it has been in production.
         </p>
       </AnimatedSection>

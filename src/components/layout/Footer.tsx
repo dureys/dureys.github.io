@@ -4,7 +4,7 @@ export function Footer() {
       <div className="mx-auto flex max-w-content flex-col items-center gap-2 text-center font-mono text-xs text-text-muted sm:flex-row sm:justify-between">
         <span>
           &copy; {new Date().getFullYear()} Oguzhan Durace &middot; this site
-          is a system — try the console up top.
+          is a system. try the console up top.
         </span>
         <a
           href="https://github.com/dureys/dureys.github.io"

@@ -16,7 +16,7 @@ export function Contact() {
           </h3>
           <p className="mb-8 text-sm text-text-secondary">
             I am interviewing for senior AI automation and architect
-            positions — Berlin or remote. If you need someone who can walk
+            positions in Berlin or remote. If you need someone who can walk
             into a messy process, find the automation that actually matters,
             and ship it to production, we should talk. I reply within a day.
           </p>

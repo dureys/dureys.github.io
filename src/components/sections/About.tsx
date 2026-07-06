@@ -5,22 +5,22 @@ const valueProps = [
   {
     tag: 'no_translation_layer',
     title: 'I speak both languages from day one',
-    body: 'I have been the stakeholder and the builder. Discovery that takes an outside consultant a quarter takes me weeks, because six years at Accenture, Shell, and scale-ups taught me where enterprise processes hide their bodies.',
+    body: 'I have been the stakeholder and the builder. Discovery that takes an outside consultant a quarter takes me weeks, because six years at Accenture, Shell, and startups taught me where enterprise processes hide their bodies.',
   },
   {
     tag: 'ai_inside_the_workflow',
     title: 'AI lives where the work already happens',
-    body: 'A model in a separate tab gets demoed once and forgotten. I put AI inside Salesforce, Jira, and Slack — the tools people already have open — so using it is the default, not a favor. That is why my systems survive their pilots.',
+    body: 'A model in a separate tab gets demoed once and forgotten. I put AI inside Salesforce, Jira, and Slack, the tools people already have open, so using it is the default, not a favor. That is why my systems survive their pilots.',
   },
   {
     tag: 'measured_or_it_didnt_happen',
     title: 'Impact you can put on a slide',
-    body: 'KPIs are defined before any code exists, and pilots are tracked against them. That is why my numbers are real: +40% conversion, −60% triage time. If a use case cannot be measured, I will tell you not to build it.',
+    body: 'KPIs are defined before any code exists, and pilots are tracked against them. That is why my numbers are real: 40% more conversion, 60% less triage time. If a use case cannot be measured, I will tell you not to build it.',
   },
   {
     tag: 'production_not_poc',
     title: 'Systems that outlive my involvement',
-    body: 'Documentation, training, and a clean handover are part of the build, not an afterthought. Everything I shipped at Andercore is still running in production — without me babysitting it.',
+    body: 'Documentation, training, and a clean handover are part of the build, not an afterthought. Everything I shipped at Andercore is still running in production without me babysitting it.',
   },
 ];
 
@@ -44,7 +44,7 @@ export function About() {
             transformations at Accenture, Shell, and high growth startups,
             mapping workflows, and sitting in the meetings where broken
             processes surface. I know what manual work costs an organization
-            because I have watched it happen — and that operational fluency
+            because I have watched it happen, and that operational fluency
             is the difference between a working prototype and a system
             people actually adopt.
           </p>
@@ -57,8 +57,8 @@ export function About() {
             that lets junior agents close escalation tier tickets on their
             own. Every engagement starts with the same two questions: what
             does this process look like today, and where does AI make it
-            meaningfully better? If the honest answer is nowhere, I say so
-            — that is what makes the yes worth something.
+            meaningfully better? If the honest answer is nowhere, I say so.
+            That is what makes the yes worth something.
           </p>
         </AnimatedSection>
       </div>

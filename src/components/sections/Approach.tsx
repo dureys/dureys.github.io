@@ -16,7 +16,7 @@ const steps = [
     description:
       'Build inside the tools teams already use, so adoption is default behavior instead of a change management battle.',
     receipt:
-      'The lead engine lives inside Salesforce — not in a separate tab nobody opens.',
+      'The lead engine lives inside Salesforce, not in a separate tab nobody opens.',
   },
   {
     number: '03',
@@ -49,7 +49,7 @@ export function Approach() {
         <p className="mb-12 max-w-xl text-sm text-text-secondary">
           Anyone can demo a model. Getting a sales team, a support desk,
           and their managers to adopt one is the hard part. This is the
-          playbook I run — each step with the receipt to prove it.
+          playbook I run, each step with the receipt to prove it.
         </p>
       </AnimatedSection>
 

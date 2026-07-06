@@ -5,7 +5,7 @@ export const enterpriseProjects: Project[] = [
     id: 'lead-qualification',
     title: 'AI Powered Lead Qualification Engine',
     description:
-      'A 15 person sales team stopped triaging leads by hand. Enrich, score, route — inside Salesforce.',
+      'A 15 person sales team stopped triaging leads by hand. Enrich, score, route, all inside Salesforce.',
     longDescription:
       'End to end Generative AI pipeline integrated into Salesforce that intercepts incoming leads, enriches them with external data sources (company size, funding stage, tech stack) via API calls, scores them using a custom ML classification model, and routes them to the optimal sales representative. The system eliminated manual lead triage for a 15 person sales team and fundamentally changed how the organization handles inbound pipeline.',
     impact: '40% conversion uplift',
@@ -23,7 +23,7 @@ export const enterpriseProjects: Project[] = [
     id: 'case-management',
     title: 'Smart Case Management System',
     description:
-      'Support tickets classify and route themselves the moment they arrive — no human in the triage loop.',
+      'Support tickets classify and route themselves the moment they arrive. No human in the triage loop.',
     longDescription:
       'Intelligent ticket routing system that uses NLP classification to auto categorize support cases by topic and urgency at the moment of creation. Assigns priority scores based on historical resolution patterns and routes to specialized agent groups. Built with Salesforce Flows and rule based AI triggers that continuously learn from resolution outcomes, improving accuracy over time.',
     impact: '60% reduction in triage time',

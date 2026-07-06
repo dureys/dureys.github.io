@@ -16,7 +16,7 @@ export function Projects() {
           </h3>
           <p className="mb-12 max-w-xl text-sm text-text-secondary">
             Production AI systems from enterprise engagements, under NDA.
-            Every card leads with the measured outcome — expand it for the
+            Every card leads with the measured outcome. Expand it for the
             architecture and the decisions behind it.
           </p>
         </AnimatedSection>
@@ -39,9 +39,9 @@ export function Projects() {
             What I Build on My Own Time
           </h3>
           <p className="mb-12 max-w-xl text-sm text-text-secondary">
-            What I ship when nobody is paying me to — real-time data
-            platforms, agent systems, and AI tools. This is where I test
-            ideas before they show up in enterprise work.
+            What I ship when nobody is paying me to: live data platforms,
+            agent systems, and AI tools. This is where I test ideas before
+            they show up in enterprise work.
           </p>
         </AnimatedSection>
 

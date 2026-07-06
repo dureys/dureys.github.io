@@ -28,7 +28,7 @@ const COMMANDS: Record<string, () => RichLine[]> = {
   whoami: () => [
     [
       { t: 'Oguzhan Durace', c: BRIGHT },
-      { t: ' — I build AI systems that reach production and stay there.' },
+      { t: '. I build AI systems that reach production and stay there.' },
     ],
     [
       { t: 'Berlin. 6 yrs mapping enterprise process at ' },
@@ -44,16 +44,16 @@ const COMMANDS: Record<string, () => RichLine[]> = {
     ],
     [
       { t: '▸ Smart Case Management', c: A },
-      { t: '     NLP triage + auto-routing            ' },
-      { t: '[-60% triage time]', c: A },
+      { t: '     NLP triage + auto routing            ' },
+      { t: '[60% less triage]', c: A },
     ],
     [
-      { t: '▸ Multi-Agent CRM', c: A },
+      { t: '▸ Multi Agent CRM', c: A },
       { t: '           3 agents: enrich · segment · write ' },
       { t: '[POC]', c: A },
     ],
     [
-      { t: '▸ Jira-Slack Alerting', c: A },
+      { t: '▸ Jira Slack Alerting', c: A },
       { t: '       smart batching kills alert fatigue  ' },
       { t: '[+35% response]', c: A },
     ],
@@ -65,11 +65,11 @@ const COMMANDS: Record<string, () => RichLine[]> = {
       { t: '  AI Automation Architect · Andercore' },
     ],
     [
-      { t: '2023-24 ', c: A },
+      { t: '2023→24 ', c: A },
       { t: '  Salesforce Product Manager · Ubitricity (Shell)' },
     ],
     [
-      { t: '2021-23 ', c: A },
+      { t: '2021→23 ', c: A },
       { t: '  Digital Integration Analyst · Accenture' },
     ],
   ],
