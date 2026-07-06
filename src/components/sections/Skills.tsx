@@ -10,9 +10,13 @@ export function Skills() {
         <h2 className="mb-2 text-xs font-medium uppercase tracking-widest text-text-muted">
           Technical Skills
         </h2>
-        <h3 className="mb-12 text-2xl font-semibold text-text-primary md:text-3xl">
-          Tools & Technologies
+        <h3 className="mb-3 text-2xl font-semibold text-text-primary md:text-3xl">
+          The Working Set
         </h3>
+        <p className="mb-12 max-w-xl text-sm text-text-secondary">
+          What I actually ship with — not every logo I have ever touched.
+          If it is on this list, it has been in production.
+        </p>
       </AnimatedSection>
 
       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">

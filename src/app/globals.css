@@ -11,24 +11,51 @@
 
   body {
     @apply bg-background text-text-primary;
+    /* Blueprint grid + soft phosphor glow instead of a flat fill */
+    background-image:
+      radial-gradient(
+        70rem 40rem at 15% -10%,
+        rgba(200, 241, 105, 0.06),
+        transparent 60%
+      ),
+      linear-gradient(rgba(200, 241, 105, 0.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(200, 241, 105, 0.035) 1px, transparent 1px);
+    background-size: 100% 100%, 56px 56px, 56px 56px;
+    background-attachment: fixed;
+  }
+
+  /* Display font drives every heading site-wide */
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
   }
 
   ::selection {
-    background-color: rgba(59, 130, 246, 0.3);
+    background-color: rgba(200, 241, 105, 0.25);
+    color: #eef2ec;
   }
 
-  /* Subtle scrollbar */
+  /* Terminal-style scrollbar */
   ::-webkit-scrollbar {
-    width: 6px;
+    width: 8px;
   }
   ::-webkit-scrollbar-track {
-    background: #09090b;
+    background: #0a0e0f;
   }
   ::-webkit-scrollbar-thumb {
-    background: #27272a;
-    border-radius: 3px;
+    background: #24312a;
+    border-radius: 0;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #3f3f46;
+    background: rgba(200, 241, 105, 0.4);
+  }
+}
+
+@layer components {
+  /* Mono structural marker used for eyebrows and section indices */
+  .mono-label {
+    @apply font-mono text-xs uppercase tracking-[0.2em] text-accent;
   }
 }

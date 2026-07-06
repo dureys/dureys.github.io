@@ -8,6 +8,8 @@ export const experiences: Experience[] = [
     period: 'Aug 2024 to Present',
     location: 'Berlin, Germany',
     isCurrent: true,
+    highlight:
+      'Shipped the lead engine (+40% conversion) and the support AI (−60% triage time) — both in production.',
     summary:
       'Leading Generative AI and intelligent automation initiatives across sales, procurement, logistics, and support. Owning the full consulting cycle from process discovery and solution design through implementation, validation against KPIs, and production rollout.',
     achievements: [
@@ -33,6 +35,8 @@ export const experiences: Experience[] = [
     companyNote: 'Shell',
     period: 'Apr 2023 to Aug 2024',
     location: 'Berlin, Germany',
+    highlight:
+      'Migrated a Shell subsidiary’s entire Salesforce org — 5 departments, phased rollout, minimal disruption.',
     summary:
       'Led a full scale digital transformation of the Salesforce environment for a Shell subsidiary. Owned the product roadmap, gathered business requirements across departments, managed cross functional stakeholders, and drove adoption through structured change management.',
     achievements: [
@@ -56,6 +60,8 @@ export const experiences: Experience[] = [
     company: 'Accenture GmbH',
     period: 'Jul 2021 to Apr 2023',
     location: 'Berlin, Germany',
+    highlight:
+      'Took 10+ international markets live for global enterprise clients, coordinating across time zones.',
     summary:
       'Delivered enterprise scale digital transformation and integration projects for global clients in client facing roles. Managed multi market implementations with structured delivery methodology, stakeholder coordination, and change management across time zones.',
     achievements: [
@@ -78,6 +84,8 @@ export const experiences: Experience[] = [
     company: 'Lemon One GmbH',
     period: 'Jul 2019 to Jun 2021',
     location: 'Berlin, Germany',
+    highlight:
+      'Built the Salesforce processes a scale-up ran on daily — validation rules, approvals, automation flows.',
     summary:
       'Managed product backlogs and Salesforce process optimization. Designed validation rules, approval workflows, and automation flows while aligning commercial and technical requirements across teams.',
     achievements: [

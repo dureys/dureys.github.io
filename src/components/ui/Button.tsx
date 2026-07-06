@@ -16,16 +16,16 @@ export function Button({
   return (
     <a
       className={cn(
-        'inline-flex items-center justify-center rounded-lg font-medium transition-colors duration-200',
+        'inline-flex items-center justify-center rounded-md font-mono text-sm font-medium tracking-wide transition-all duration-200',
         {
-          'bg-accent text-white hover:bg-blue-600':
+          'bg-accent text-background hover:bg-accent/90 hover:shadow-[0_0_24px_-4px_rgba(200,241,105,0.6)]':
             variant === 'primary',
-          'border border-zinc-700 text-text-secondary hover:border-zinc-500 hover:text-text-primary':
+          'border border-border-strong text-text-secondary hover:border-accent hover:text-accent':
             variant === 'secondary',
         },
         {
-          'px-6 py-3 text-sm': size === 'default',
-          'px-4 py-2 text-sm': size === 'sm',
+          'px-6 py-3': size === 'default',
+          'px-4 py-2': size === 'sm',
         },
         className
       )}

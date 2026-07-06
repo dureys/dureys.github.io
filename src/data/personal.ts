@@ -4,7 +4,7 @@ export const personalInfo: PersonalInfo = {
   name: 'Oguzhan Durace',
   title: 'AI Automation Architect',
   tagline:
-    'I combine deep business process expertise with hands on AI and Generative AI engineering to build enterprise systems that actually deliver. Having spent years in consulting and operations roles inside Salesforce, CRM, and enterprise workflows, I know where intelligent automation creates real value and where it falls flat. That context is what lets me design scalable AI solutions that fit the business, not just the tech stack.',
+    'I build AI systems that reach production and stay there. At Andercore I shipped a lead qualification engine that lifted conversion 40% and a support pipeline that cut triage time 60%. Six years mapping enterprise process at Accenture, Shell and Salesforce teams taught me the part most AI projects skip: which problems are worth automating, and which quietly break when you try.',
   location: 'Berlin, Germany',
   email: 'durace.o@gmail.com',
   phone: '+49 176 8009 3317',
@@ -14,8 +14,8 @@ export const personalInfo: PersonalInfo = {
 };
 
 export const metrics = [
-  { value: '6+', label: 'Years in Automation' },
-  { value: '4', label: 'Enterprise Companies' },
-  { value: '40%', label: 'Conversion Uplift' },
-  { value: '8+', label: 'AI Systems Built' },
+  { value: '40%', label: 'conversion uplift, lead engine' },
+  { value: '60%', label: 'less triage time, support AI' },
+  { value: '8+', label: 'AI systems in production' },
+  { value: '6+', label: 'years in enterprise automation' },
 ];

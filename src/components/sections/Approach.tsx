@@ -6,25 +6,33 @@ const steps = [
     number: '01',
     title: 'Discover & Scope',
     description:
-      'Map the current process with the people who live it every day. Run a feasibility assessment, identify where the real bottlenecks are, define KPIs upfront, and align stakeholders on what "done" looks like before writing a single line of code.',
+      'Map the process with the people who live it. Define KPIs and what "done" means before any code exists.',
+    receipt:
+      'At Andercore: discovery workshops with sales leadership before the lead engine was a single line of code.',
   },
   {
     number: '02',
     title: 'Build & Configure',
     description:
-      'Design and implement the AI solution within the existing tech stack. Integrate with the tools teams already use (Salesforce, JIRA, Slack, CRMs) so adoption is seamless, not a change management battle.',
+      'Build inside the tools teams already use, so adoption is default behavior instead of a change management battle.',
+    receipt:
+      'The lead engine lives inside Salesforce — not in a separate tab nobody opens.',
   },
   {
     number: '03',
     title: 'Pilot & Validate',
     description:
-      'Run a structured pilot with a defined scope, real data, and real users. Track performance against the success metrics agreed in discovery. Iterate based on user feedback before scaling.',
+      'Structured pilot with real data and real users, tracked against the KPIs agreed in discovery. Iterate before scaling.',
+    receipt:
+      'Case management piloted on a ticket subset, reshaped by agent feedback, then scaled company wide.',
   },
   {
     number: '04',
     title: 'Scale & Hand Off',
     description:
-      'Present pilot results to decision makers with clear ROI data. Roll out the scalable solution to the full organization with training, technical documentation, and a clean handover so the system runs independently after I leave.',
+      'ROI to decision makers, training and documentation for the team, and a handover clean enough that the system runs without me.',
+    receipt:
+      'Both Andercore systems have been running in production since rollout.',
   },
 ];
 
@@ -39,9 +47,9 @@ export function Approach() {
           How I Deliver AI Projects
         </h3>
         <p className="mb-12 max-w-xl text-sm text-text-secondary">
-          Every engagement follows the same structured approach. This is
-          what separates a POC that sits on a shelf from a system that
-          gets adopted and delivers ROI.
+          Anyone can demo a model. Getting a sales team, a support desk,
+          and their managers to adopt one is the hard part. This is the
+          playbook I run — each step with the receipt to prove it.
         </p>
       </AnimatedSection>
 
@@ -57,6 +65,9 @@ export function Approach() {
               </h4>
               <p className="mt-2 text-sm leading-relaxed text-text-secondary">
                 {step.description}
+              </p>
+              <p className="mt-3 border-t border-border-subtle pt-3 font-mono text-xs leading-relaxed text-accent/80">
+                {step.receipt}
               </p>
             </div>
           </AnimatedSection>

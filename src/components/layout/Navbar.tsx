@@ -24,18 +24,25 @@ export function Navbar() {
       )}
     >
       <nav className="mx-auto flex max-w-content items-center justify-between px-6 py-4">
-        <a href="#" className="text-sm font-semibold text-text-primary">
-          Oguzhan Durace
+        <a
+          href="#"
+          className="font-mono text-sm font-medium text-text-primary"
+        >
+          <span className="text-accent">[</span>OD<span className="text-accent">]</span>{' '}
+          oguzhan_durace
         </a>
 
         {/* Desktop nav */}
         <div className="hidden items-center gap-8 md:flex">
-          {navItems.map((item) => (
+          {navItems.map((item, i) => (
             <a
               key={item.href}
               href={item.href}
-              className="text-sm text-text-muted transition-colors duration-200 hover:text-text-primary"
+              className="font-mono text-xs uppercase tracking-widest text-text-muted transition-colors duration-200 hover:text-accent"
             >
+              <span className="text-accent/50">
+                {String(i + 1).padStart(2, '0')}
+              </span>{' '}
               {item.label}
             </a>
           ))}
@@ -73,7 +80,7 @@ export function Navbar() {
                 key={item.href}
                 href={item.href}
                 onClick={() => setMobileOpen(false)}
-                className="text-sm text-text-muted transition-colors hover:text-text-primary"
+                className="font-mono text-sm uppercase tracking-widest text-text-muted transition-colors hover:text-accent"
               >
                 {item.label}
               </a>

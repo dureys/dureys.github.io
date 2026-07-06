@@ -1,21 +1,34 @@
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
+import { Bricolage_Grotesque, IBM_Plex_Sans, JetBrains_Mono } from 'next/font/google';
 import './globals.css';
 
-const inter = Inter({
+const bricolage = Bricolage_Grotesque({
   subsets: ['latin'],
-  variable: '--font-inter',
+  weight: ['600', '700', '800'],
+  variable: '--font-display',
+});
+
+const plexSans = IBM_Plex_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600'],
+  variable: '--font-sans',
+});
+
+const jetbrains = JetBrains_Mono({
+  subsets: ['latin'],
+  weight: ['400', '500'],
+  variable: '--font-mono',
 });
 
 export const metadata: Metadata = {
   title: 'Oguzhan Durace — AI Automation Architect',
   description:
-    'AI Automation Architect & Salesforce Product Owner. I design and build AI-powered systems that drive measurable business outcomes.',
+    'I build AI systems that reach production and stay there. Lead engine: +40% conversion. Support AI: −60% triage time. Berlin.',
   openGraph: {
     title: 'Oguzhan Durace — AI Automation Architect',
     description:
-      'Building intelligent enterprise systems with LLMs, multi-agent frameworks, and automation platforms.',
-    url: 'https://dureys.github.io/ai-portfolio-hub',
+      'I build AI systems that reach production and stay there. Lead engine: +40% conversion. Support AI: −60% triage time. Berlin.',
+    url: 'https://dureys.github.io',
     siteName: 'Oguzhan Durace',
     locale: 'en_US',
     type: 'website',
@@ -32,7 +45,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={inter.variable}>
+    <html
+      lang="en"
+      className={`${bricolage.variable} ${plexSans.variable} ${jetbrains.variable}`}
+    >
       <body className="font-sans antialiased">{children}</body>
     </html>
   );

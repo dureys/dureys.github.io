@@ -12,14 +12,13 @@ export function Contact() {
             Contact
           </h2>
           <h3 className="mb-4 text-2xl font-semibold text-text-primary md:text-3xl">
-            Looking for My Next Challenge
+            Hiring for a Senior AI Role?
           </h3>
           <p className="mb-8 text-sm text-text-secondary">
-            Currently exploring senior AI consulting and AI automation
-            architect roles where I can lead enterprise AI initiatives
-            end to end. If your organization is integrating AI into
-            business operations and needs someone who understands both
-            sides, I would welcome the conversation.
+            I am interviewing for senior AI automation and architect
+            positions — Berlin or remote. If you need someone who can walk
+            into a messy process, find the automation that actually matters,
+            and ship it to production, we should talk. I reply within a day.
           </p>
 
           <div className="flex flex-wrap justify-center gap-3">

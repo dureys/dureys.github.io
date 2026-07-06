@@ -14,12 +14,14 @@ export function Badge({
   return (
     <span
       className={cn(
-        'inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium',
+        'inline-flex items-center rounded border px-2 py-0.5 font-mono text-[11px] tracking-wide',
         {
-          'bg-zinc-800 text-zinc-300': variant === 'default',
-          'bg-accent-dim text-accent': variant === 'accent',
-          'bg-amber-500/10 text-amber-400': variant === 'private',
-          'bg-emerald-500/10 text-emerald-400': variant === 'public',
+          'border-border-subtle bg-surface text-text-secondary':
+            variant === 'default',
+          'border-border-strong bg-accent-dim text-accent': variant === 'accent',
+          'border-amber-500/20 bg-amber-500/10 text-amber-400':
+            variant === 'private',
+          'border-accent/25 bg-accent-dim text-accent': variant === 'public',
         },
         className
       )}

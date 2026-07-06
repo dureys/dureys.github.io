@@ -2,26 +2,26 @@ import { SkillGroup } from '@/types';
 
 export const skillGroups: SkillGroup[] = [
   {
-    category: 'LLMs & AI Models',
+    category: 'LLMs & Agent Systems',
     skills: [
       'OpenAI GPT',
       'Claude API',
       'Google Gemini',
-      'Qwen',
-      'Ollama (Local LLMs)',
-      'Hugging Face',
-      'Generative AI (GenAI)',
+      'Ollama (local models)',
+      'Multi agent orchestration',
+      'RAG & knowledge retrieval',
+      'Prompt engineering',
     ],
   },
   {
-    category: 'Intelligent Automation & AI Patterns',
+    category: 'Engineering',
     skills: [
-      'Prompt Engineering & Optimization',
-      'Multi Agent Orchestration',
-      'AI Workflow Design',
-      'API Integration Patterns',
-      'Agentic AI Workflows',
-      'AI Powered Automation',
+      'Python',
+      'TypeScript / JavaScript',
+      'FastAPI',
+      'React / Next.js',
+      'REST APIs',
+      'Git / CI-CD',
     ],
   },
   {
@@ -29,41 +29,18 @@ export const skillGroups: SkillGroup[] = [
     skills: [
       'n8n',
       'Make.com',
-      'Zapier + AI',
-      'Webhook Orchestration',
-      'REST APIs',
+      'Webhook orchestration',
       'Supabase',
-    ],
-  },
-  {
-    category: 'Development',
-    skills: [
-      'JavaScript / TypeScript',
-      'Next.js / React',
       'Streamlit',
-      'FastAPI',
-      'Git / CI/CD',
-      'Vite',
     ],
   },
   {
     category: 'Enterprise Platforms',
     skills: [
-      'Salesforce (Sales, Service, Flow Builder)',
-      'Adobe Experience Manager',
+      'Salesforce (Sales, Service, Flow, Apex)',
       'JIRA / Confluence',
+      'Adobe Experience Manager',
       'Sitetracker',
-      'Cloud Platforms (SaaS)',
-    ],
-  },
-  {
-    category: 'AI Development Tools',
-    skills: [
-      'Cursor AI',
-      'GitHub Copilot',
-      'Claude Code',
-      'Lovable',
-      'Midjourney',
     ],
   },
 ];

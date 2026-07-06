@@ -15,10 +15,9 @@ export function Projects() {
             What I Build at Work
           </h3>
           <p className="mb-12 max-w-xl text-sm text-text-secondary">
-            AI powered enterprise systems, multi agent architectures, and
-            intelligent automation. These projects are from enterprise
-            engagements under NDA. The descriptions below detail the
-            architecture, tools, and measurable impact of each.
+            Production AI systems from enterprise engagements, under NDA.
+            Every card leads with the measured outcome — expand it for the
+            architecture and the decisions behind it.
           </p>
         </AnimatedSection>
 
@@ -40,9 +39,9 @@ export function Projects() {
             What I Build on My Own Time
           </h3>
           <p className="mb-12 max-w-xl text-sm text-text-secondary">
-            Side projects, experiments, and tools I build to explore new
-            technologies and solve problems that interest me. A mix of AI
-            applications, data platforms, and web tools.
+            What I ship when nobody is paying me to — real-time data
+            platforms, agent systems, and AI tools. This is where I test
+            ideas before they show up in enterprise work.
           </p>
         </AnimatedSection>
 

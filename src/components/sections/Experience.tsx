@@ -10,9 +10,14 @@ export function Experience() {
         <h2 className="mb-2 text-xs font-medium uppercase tracking-widest text-text-muted">
           Experience
         </h2>
-        <h3 className="mb-12 text-2xl font-semibold text-text-primary md:text-3xl">
+        <h3 className="mb-3 text-2xl font-semibold text-text-primary md:text-3xl">
           Professional Journey
         </h3>
+        <p className="mb-12 max-w-xl text-sm text-text-secondary">
+          Six years, four companies, one throughline: turning messy enterprise
+          process into systems that run themselves. Click any role for the
+          full story.
+        </p>
       </AnimatedSection>
 
       <div>

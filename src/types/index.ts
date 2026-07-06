@@ -17,6 +17,8 @@ export interface Experience {
   companyNote?: string;
   period: string;
   location: string;
+  /** One metric-first line shown while the item is collapsed. */
+  highlight: string;
   summary: string;
   achievements: string[];
   technologies: string[];

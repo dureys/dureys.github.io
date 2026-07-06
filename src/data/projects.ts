@@ -5,7 +5,7 @@ export const enterpriseProjects: Project[] = [
     id: 'lead-qualification',
     title: 'AI Powered Lead Qualification Engine',
     description:
-      'Enterprise AI pipeline that automatically qualifies, scores, and routes sales leads.',
+      'A 15 person sales team stopped triaging leads by hand. Enrich, score, route — inside Salesforce.',
     longDescription:
       'End to end Generative AI pipeline integrated into Salesforce that intercepts incoming leads, enriches them with external data sources (company size, funding stage, tech stack) via API calls, scores them using a custom ML classification model, and routes them to the optimal sales representative. The system eliminated manual lead triage for a 15 person sales team and fundamentally changed how the organization handles inbound pipeline.',
     impact: '40% conversion uplift',
@@ -23,7 +23,7 @@ export const enterpriseProjects: Project[] = [
     id: 'case-management',
     title: 'Smart Case Management System',
     description:
-      'NLP powered ticket routing that auto categorizes and prioritizes support cases.',
+      'Support tickets classify and route themselves the moment they arrive — no human in the triage loop.',
     longDescription:
       'Intelligent ticket routing system that uses NLP classification to auto categorize support cases by topic and urgency at the moment of creation. Assigns priority scores based on historical resolution patterns and routes to specialized agent groups. Built with Salesforce Flows and rule based AI triggers that continuously learn from resolution outcomes, improving accuracy over time.',
     impact: '60% reduction in triage time',
@@ -42,7 +42,7 @@ export const enterpriseProjects: Project[] = [
     id: 'support-bot',
     title: 'AI Support Bot & Knowledge Assistant',
     description:
-      'Conversational AI assistant that analyzes tickets, matches past resolutions, and drafts responses for support agents.',
+      'GPT drafts the response before the agent even opens the ticket. Junior agents now close escalation tier work.',
     longDescription:
       'AI powered support assistant built to reduce resolution times for a growing support team. The system takes incoming tickets, uses GPT to classify issue type and urgency, then searches structured knowledge base entries to surface the most relevant past resolutions. It auto drafts response templates that agents can review and send, cutting the time from ticket open to first response significantly. The real impact was enabling junior agents to handle complex escalation tier tickets independently, reducing dependency on senior staff.',
     impact: 'Junior agents resolving 3x more complex tickets',
@@ -60,7 +60,7 @@ export const enterpriseProjects: Project[] = [
     id: 'multi-agent-crm',
     title: 'Multi Agent CRM System',
     description:
-      'Autonomous multi agent system where specialized AI agents handle different CRM operations end to end.',
+      'Three autonomous agents run the CRM: one enriches, one segments, one writes the outreach.',
     longDescription:
       'Built a system with three specialized AI agents that each own a distinct CRM workflow. The first agent enriches new customer records by pulling company data, funding stage, and tech stack from external APIs. The second agent runs audience segmentation using clustering on deal history and engagement patterns. The third generates personalized follow up email sequences based on segment and deal stage. Each agent operates independently, passes structured outputs to the next, and flags anomalies for human review. Designed as a POC for autonomous enterprise CRM operations.',
     technologies: [
@@ -77,7 +77,7 @@ export const enterpriseProjects: Project[] = [
     id: 'jira-slack',
     title: 'Jira Slack Intelligent Alerting',
     description:
-      'Smart integration bridge with context rich notifications and noise filtering.',
+      'Teams were ignoring critical alerts. Smart batching and filtering made notifications trustworthy again.',
     longDescription:
       'Custom integration that monitors Jira ticket state changes in real time, applies intelligent filtering rules to prevent notification fatigue, and delivers context rich alerts to the right Slack channels. Includes smart batching (grouping related updates), actionable Slack buttons for quick ticket actions, and configurable escalation paths. Solved the "alert noise" problem that caused teams to ignore critical notifications.',
     impact: '35% faster ticket response',
@@ -95,7 +95,7 @@ export const enterpriseProjects: Project[] = [
     id: 'salesforce-rebuild',
     title: 'Salesforce Enterprise Architecture Rebuild',
     description:
-      'Full scale CRM platform migration and modernization for Ubitricity (Shell).',
+      'Rebuilt a Shell subsidiary’s entire Salesforce data model from scratch. Five departments, zero missed deadlines.',
     longDescription:
       'Led the complete Salesforce environment migration and modernization at Ubitricity, a Shell subsidiary. Redesigned the entire data model from scratch, migrated legacy configurations, deployed Sales Cloud, Service Cloud, and Sitetracker integrations, and trained cross functional teams on new workflows. The project transformed company wide operational efficiency and was delivered on schedule and within budget.',
     technologies: [
