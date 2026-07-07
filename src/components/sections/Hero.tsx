@@ -45,12 +45,16 @@ export function Hero() {
           </h1>
 
           <p className="mb-3 max-w-xl text-lg font-medium leading-snug text-text-primary md:text-xl">
-            I build AI systems that reach production and stay there.
+            Most people use AI as one extra person in a chat window. I run it
+            as a team.
           </p>
           <p className="mb-8 max-w-xl text-base leading-relaxed text-text-secondary">
-            Six years mapping enterprise process at Accenture, Shell and
-            Salesforce taught me the part most AI projects skip: which problems
-            are worth automating, and which quietly break when you try.
+            Parallel agent sessions building separate parts at once, with me
+            as the reviewer on everything that ships. What took me three days
+            before AI ships in one. Six years mapping enterprise process at
+            Accenture, Shell and Salesforce taught me the part most AI
+            projects skip: which problems are worth automating, and which
+            quietly break when you try.
           </p>
 
           <div className="mb-10 flex flex-wrap gap-3">
@@ -79,6 +83,11 @@ export function Hero() {
           <p className="mt-3 text-center font-mono text-[11px] tracking-wide text-text-muted">
             <span className="text-accent">$</span> this portfolio is a system. talk to it.
           </p>
+          <div className="mt-4 flex justify-center">
+            <Button href="/systems/" variant="secondary" size="sm">
+              $ open system_registry ▸
+            </Button>
+          </div>
         </AnimatedSection>
       </div>
     </section>

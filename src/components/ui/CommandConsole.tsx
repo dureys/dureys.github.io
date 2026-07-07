@@ -55,14 +55,14 @@ const COMMANDS: Record<string, () => RichLine[]> = {
     [
       { t: '▸ Jira Slack Alerting', c: A },
       { t: '       smart batching kills alert fatigue  ' },
-      { t: '[+35% response]', c: A },
+      { t: '[NDA]', c: A },
     ],
     [{ t: 'scroll down for the full case studies and live demo.', c: DIM }],
   ],
   experience: () => [
     [
       { t: '2024→now', c: A },
-      { t: '  AI Automation Architect · Andercore' },
+      { t: '  AI Automation Architect · B2B Scale-up (confidential)' },
     ],
     [
       { t: '2023→24 ', c: A },
@@ -192,7 +192,7 @@ export function CommandConsole() {
         <span className="font-mono text-xs text-text-muted">v2.0</span>
         <span className="ml-auto flex items-center gap-2 font-mono text-[11px] text-text-secondary">
           <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
-          8 systems · 40% avg uplift · available
+          16 systems documented · available
         </span>
       </div>
 

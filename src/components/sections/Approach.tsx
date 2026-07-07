@@ -8,7 +8,7 @@ const steps = [
     description:
       'Map the process with the people who live it. Define KPIs and what "done" means before any code exists.',
     receipt:
-      'At Andercore: discovery workshops with sales leadership before the lead engine was a single line of code.',
+      'In my current role: discovery workshops with sales leadership before the lead engine was a single line of code.',
   },
   {
     number: '02',
@@ -32,7 +32,7 @@ const steps = [
     description:
       'ROI to decision makers, training and documentation for the team, and a handover clean enough that the system runs without me.',
     receipt:
-      'Both Andercore systems have been running in production since rollout.',
+      'Both production systems from my current role have been running since rollout.',
   },
 ];
 

@@ -1,7 +1,11 @@
 import { Section } from '@/components/layout/Section';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { Card } from '@/components/ui/Card';
-import { enterpriseProjects, personalProjects } from '@/data/projects';
+import {
+  enterpriseProjects,
+  personalProjects,
+  referenceDesigns,
+} from '@/data/projects';
 
 export function Projects() {
   return (
@@ -52,6 +56,32 @@ export function Projects() {
                 project={project}
                 badgeLabel={project.isPrivate ? 'Private' : 'Open Source'}
               />
+            </AnimatedSection>
+          ))}
+        </div>
+      </Section>
+
+      <Section id="designs" alternate>
+        <AnimatedSection>
+          <h2 className="mb-2 text-xs font-medium uppercase tracking-widest text-text-muted">
+            Reference Designs
+          </h2>
+          <h3 className="mb-4 text-2xl font-semibold text-text-primary md:text-3xl">
+            How I Think Before I Build
+          </h3>
+          <p className="mb-12 max-w-xl text-sm text-text-secondary">
+            Architectures and playbooks written before anyone paid for them.
+            Each one states its tradeoffs and what a pilot would prove,
+            because a design that hides its constraints is a pitch, not a
+            design. If one of these is close to your problem, I can turn it
+            into a working slice in days.
+          </p>
+        </AnimatedSection>
+
+        <div className="grid gap-6 md:grid-cols-2">
+          {referenceDesigns.map((project, index) => (
+            <AnimatedSection key={project.id} delay={index * 0.05}>
+              <Card project={project} />
             </AnimatedSection>
           ))}
         </div>

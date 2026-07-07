@@ -2,29 +2,29 @@ import { Experience } from '@/types';
 
 export const experiences: Experience[] = [
   {
-    id: 'andercore',
-    role: 'AI Automation Architect & Salesforce Product Owner',
-    company: 'Andercore GmbH',
+    id: 'current-role',
+    role: 'AI Automation Architect & Product Owner',
+    company: 'B2B Scale-up',
+    companyNote: 'confidential',
     period: 'Aug 2024 to Present',
     location: 'Berlin, Germany',
     isCurrent: true,
     highlight:
-      'Shipped the lead engine (40% more conversion) and the support AI (60% less triage time), both in production.',
+      'Shipped a lead engine (40% more conversion) and a support AI (60% less triage time), both in production.',
     summary:
-      'Leading Generative AI and intelligent automation initiatives across sales, procurement, logistics, and support. Owning the full consulting cycle from process discovery and solution design through implementation, validation against KPIs, and production rollout.',
+      'Leading generative AI and intelligent automation initiatives across sales, procurement, logistics, and support. Owning the full cycle from process discovery and solution design through implementation, validation against KPIs, and production rollout. Current role, so the work is described at the pattern level and the internal specifics stay confidential.',
     achievements: [
-      'Ran discovery workshops with sales leadership to identify pipeline bottlenecks, then scoped and built an AI powered lead qualification engine in Salesforce using LLMs and ML based scoring. Validated against agreed KPIs over a structured pilot, presented data driven results to the executive team, and secured sign off for full rollout. Outcome: 40% conversion uplift.',
-      'Mapped the end to end support ticket lifecycle with the operations team, identified triage as the primary bottleneck, and designed a smart case management system using NLP classification. Piloted with a subset of ticket categories, iterated based on agent feedback in a continuous improvement cycle, and scaled company wide. Outcome: 60% reduction in triage time.',
-      'Developed a Jira Slack alerting integration and Conversational AI support bot. Defined success criteria with the support manager, ran a 3 week POC tracking resolution times and agent satisfaction, then transitioned both tools into core operational infrastructure.',
-      'Own end to end delivery of AI automation projects: process mapping, solution design, stakeholder alignment, technical build, user acceptance testing, technical documentation, training, and production handover.',
+      'Ran discovery with sales leadership to find pipeline bottlenecks, then scoped and built an AI powered lead qualification engine inside the CRM the team already used. Validated against agreed KPIs over a structured pilot, presented results to the executive team, and secured sign off for full rollout. Outcome: 40% conversion uplift.',
+      'Mapped the support ticket lifecycle with the operations team, identified triage as the primary bottleneck, and designed a classify and route system with a verification step. Piloted on a subset of ticket categories, iterated on agent feedback, and scaled it. Outcome: 60% reduction in triage time.',
+      'Built internal productivity tooling including an intelligent alerting integration and a draft assist support bot. Defined success criteria with the team, ran a structured POC, then moved both into core operational infrastructure.',
+      'Own end to end delivery: process mapping, solution design, stakeholder alignment, technical build, user acceptance testing, documentation, training, and production handover.',
     ],
     technologies: [
-      'OpenAI GPT',
+      'LLMs',
       'Claude',
-      'Salesforce',
+      'AI Agents',
       'n8n',
       'Make.com',
-      'JIRA',
       'REST APIs',
     ],
   },

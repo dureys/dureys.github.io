@@ -10,7 +10,7 @@ const valueProps = [
   {
     tag: 'ai_inside_the_workflow',
     title: 'AI lives where the work already happens',
-    body: 'A model in a separate tab gets demoed once and forgotten. I put AI inside Salesforce, Jira, and Slack, the tools people already have open, so using it is the default, not a favor. That is why my systems survive their pilots.',
+    body: 'A model in a separate tab gets demoed once and forgotten. I put AI inside the CRM, the issue tracker, and the chat tools people already have open, so using it is the default, not a favor. That is why my systems survive their pilots.',
   },
   {
     tag: 'measured_or_it_didnt_happen',
@@ -20,7 +20,7 @@ const valueProps = [
   {
     tag: 'production_not_poc',
     title: 'Systems that outlive my involvement',
-    body: 'Documentation, training, and a clean handover are part of the build, not an afterthought. Everything I shipped at Andercore is still running in production without me babysitting it.',
+    body: 'Documentation, training, and a clean handover are part of the build, not an afterthought. The systems I shipped in my current role are still running in production without me babysitting them.',
   },
 ];
 
