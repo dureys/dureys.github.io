@@ -53,6 +53,8 @@ export function Navbar() {
           onClick={() => setMobileOpen(!mobileOpen)}
           className="flex h-8 w-8 items-center justify-center md:hidden"
           aria-label="Toggle menu"
+          aria-expanded={mobileOpen}
+          aria-controls="mobile-navigation"
         >
           <div className="space-y-1.5">
             <span
@@ -73,7 +75,7 @@ export function Navbar() {
 
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="border-b border-border-subtle bg-background/95 px-6 pb-6 backdrop-blur-xl md:hidden">
+        <div id="mobile-navigation" className="border-b border-border-subtle bg-background/95 px-6 pb-6 backdrop-blur-xl md:hidden">
           <div className="flex flex-col gap-4">
             {navItems.map((item) => (
               <a

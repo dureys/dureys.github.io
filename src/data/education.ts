@@ -33,7 +33,6 @@ export const certifications: Certification[] = [
 
 export const languages = [
   { language: 'Turkish', level: 'Native' },
-  { language: 'English', level: 'C2' },
+  { language: 'English', level: 'C1' },
   { language: 'German', level: 'B1' },
-  { language: 'French', level: 'A1' },
 ];

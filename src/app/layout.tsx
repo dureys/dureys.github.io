@@ -21,13 +21,15 @@ const jetbrains = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Oguzhan Durace | AI Automation Architect',
+  metadataBase: new URL('https://dureys.github.io'),
+  alternates: { canonical: '/' },
+  title: 'Oguzhan Durace | AI Systems Builder & Integrator',
   description:
-    'I build AI systems that reach production and stay there. Lead engine: 40% more conversion. Support AI: 60% less triage time. Berlin.',
+    'AI implementation, workflow automation and business systems. Enterprise delivery experience and independent AI products, with process ownership from discovery through adoption. Berlin.',
   openGraph: {
-    title: 'Oguzhan Durace | AI Automation Architect',
+    title: 'Oguzhan Durace | AI Systems Builder & Integrator',
     description:
-      'I build AI systems that reach production and stay there. Lead engine: 40% more conversion. Support AI: 60% less triage time. Berlin.',
+      'AI implementation, workflow automation and business systems. Enterprise delivery experience and independent AI products, with process ownership from discovery through adoption. Berlin.',
     url: 'https://dureys.github.io',
     siteName: 'Oguzhan Durace',
     locale: 'en_US',

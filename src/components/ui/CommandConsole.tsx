@@ -2,6 +2,8 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { personalInfo } from '@/data/personal';
+import { experiences } from '@/data/experience';
+import { enterpriseProjects, personalProjects } from '@/data/projects';
 
 /**
  * Interactive "oguzhan.os" console. Boots on mount, then responds to typed
@@ -19,81 +21,27 @@ const BRIGHT = 'text-text-primary';
 const PROMPT = 'visitor@oguzhan.os:~$';
 
 const COMMANDS: Record<string, () => RichLine[]> = {
-  help: () => [
-    [
-      { t: 'available ', c: DIM },
-      { t: 'whoami  projects  experience  skills  hire  ask <q>  clear', c: A },
-    ],
-  ],
+  help: () => [[{ t: 'whoami  projects  experience  skills  hire  clear', c: A }]],
   whoami: () => [
-    [
-      { t: 'Oguzhan Durace', c: BRIGHT },
-      { t: '. I build AI systems that reach production and stay there.' },
-    ],
-    [
-      { t: 'Berlin. 6 yrs mapping enterprise process at ' },
-      { t: 'Accenture, Shell, Salesforce', c: A },
-      { t: ' before going deep on applied AI.' },
-    ],
+    [{ t: personalInfo.name + ' · ' + personalInfo.title, c: BRIGHT }],
+    [{ t: personalInfo.tagline }],
+    [{ t: 'Independent AI building and family business support since Dec 2025.', c: DIM }],
   ],
-  projects: () => [
-    [
-      { t: '▸ Lead Qualification Engine', c: A },
-      { t: '   enrich → score → route in Salesforce   ' },
-      { t: '[+40% conversion]', c: A },
-    ],
-    [
-      { t: '▸ Smart Case Management', c: A },
-      { t: '     NLP triage + auto routing            ' },
-      { t: '[60% less triage]', c: A },
-    ],
-    [
-      { t: '▸ Multi Agent CRM', c: A },
-      { t: '           3 agents: enrich · segment · write ' },
-      { t: '[POC]', c: A },
-    ],
-    [
-      { t: '▸ Jira Slack Alerting', c: A },
-      { t: '       smart batching kills alert fatigue  ' },
-      { t: '[NDA]', c: A },
-    ],
-    [{ t: 'scroll down for the full case studies and live demo.', c: DIM }],
-  ],
-  experience: () => [
-    [
-      { t: '2024→now', c: A },
-      { t: '  AI Automation Architect · B2B Scale-up (confidential)' },
-    ],
-    [
-      { t: '2023→24 ', c: A },
-      { t: '  Salesforce Product Manager · Ubitricity (Shell)' },
-    ],
-    [
-      { t: '2021→23 ', c: A },
-      { t: '  Digital Integration Analyst · Accenture' },
-    ],
-  ],
+  projects: () => [...enterpriseProjects, ...personalProjects.filter(p => p.systemNo)].map(p => [
+    { t: p.title + ' ', c: A }, { t: '[' + p.deepDive?.status + ']', c: DIM },
+  ]),
+  experience: () => experiences.map(e => [
+    { t: e.period + '  ', c: A }, { t: e.role + ' · ' + e.company },
+  ]),
   skills: () => [
-    [
-      { t: 'LLMs       ', c: DIM },
-      { t: 'GPT · Claude · Gemini · Ollama', c: A },
-    ],
-    [
-      { t: 'Build      ', c: DIM },
-      { t: 'Python · TypeScript · FastAPI · n8n · React', c: A },
-    ],
-    [
-      { t: 'Enterprise ', c: DIM },
-      { t: 'Salesforce · Jira · REST APIs', c: A },
-    ],
+    [{ t: 'Ownership: requirements, workflow logic, integrations, acceptance and adoption.' }],
+    [{ t: 'AI: Claude · Codex · OpenAI · MCP · evaluation', c: A }],
+    [{ t: 'Integration: Salesforce · Make · Zapier · n8n · REST APIs', c: A }],
+    [{ t: 'Stack managed with AI support: Python · TypeScript · SQL · FastAPI · React · Next.js · Supabase · pandas · Streamlit', c: DIM }],
   ],
   hire: () => [
-    [{ t: 'Available for senior AI automation and consulting roles.' }],
-    [
-      { t: '→ ', c: A },
-      { t: personalInfo.email, c: A },
-      { t: '   ·   ' + personalInfo.location, c: DIM },
-    ],
+    [{ t: 'Interested in AI implementation and product roles with substantial AI work.' }],
+    [{ t: personalInfo.email, c: A }, { t: ' · ' + personalInfo.location, c: DIM }],
   ],
   contact: () => COMMANDS.hire(),
 };
@@ -116,7 +64,7 @@ export function CommandConsole() {
       [{ t: 'initializing oguzhan.os ...', c: DIM }],
       [{ t: 'loading system graph ...', c: DIM }],
       [
-        { t: 'agent online. type ' },
+        { t: 'portfolio ready. type ' },
         { t: 'help', c: A },
         { t: ' or tap a command below.' },
       ],
@@ -153,10 +101,10 @@ export function CommandConsole() {
       if (base === 'ask') {
         push([
           [
-            { t: 'the agent ', c: A },
+            { t: 'portfolio help ', c: A },
             {
               t:
-                '> ask me anything about Oguzhan. (the live build wires this to a RAG over his work and answers in his voice.)',
+                'This is a portfolio navigator. Use projects, experience or skills to explore the work.',
               c: DIM,
             },
           ],
@@ -190,9 +138,9 @@ export function CommandConsole() {
         <span className="h-2.5 w-2.5 rounded-full bg-white/10" />
         <span className="ml-2 font-mono text-xs text-accent">oguzhan.os</span>
         <span className="font-mono text-xs text-text-muted">v2.0</span>
-        <span className="ml-auto flex items-center gap-2 font-mono text-[11px] text-text-secondary">
+        <span className="ml-auto hidden items-center gap-2 font-mono text-[11px] text-text-secondary sm:flex">
           <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
-          16 systems documented · available
+          projects · experience · tools
         </span>
       </div>
 
@@ -262,7 +210,7 @@ export function CommandConsole() {
           }}
           placeholder={ready ? 'type a command...' : 'booting...'}
           aria-label="Portfolio command input"
-          className="flex-1 bg-transparent font-mono text-[14px] text-text-primary caret-accent outline-none placeholder:text-text-muted"
+          className="min-w-0 flex-1 bg-transparent font-mono text-[14px] text-text-primary caret-accent outline-none placeholder:text-text-muted"
         />
       </div>
     </div>

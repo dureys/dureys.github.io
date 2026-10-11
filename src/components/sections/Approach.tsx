@@ -1,78 +1,12 @@
 import { Section } from '@/components/layout/Section';
-import { AnimatedSection } from '@/components/ui/AnimatedSection';
-
 const steps = [
-  {
-    number: '01',
-    title: 'Discover & Scope',
-    description:
-      'Map the process with the people who live it. Define KPIs and what "done" means before any code exists.',
-    receipt:
-      'In my current role: discovery workshops with sales leadership before the lead engine was a single line of code.',
-  },
-  {
-    number: '02',
-    title: 'Build & Configure',
-    description:
-      'Build inside the tools teams already use, so adoption is default behavior instead of a change management battle.',
-    receipt:
-      'The lead engine lives inside Salesforce, not in a separate tab nobody opens.',
-  },
-  {
-    number: '03',
-    title: 'Pilot & Validate',
-    description:
-      'Structured pilot with real data and real users, tracked against the KPIs agreed in discovery. Iterate before scaling.',
-    receipt:
-      'Case management piloted on a ticket subset, reshaped by agent feedback, then scaled company wide.',
-  },
-  {
-    number: '04',
-    title: 'Scale & Hand Off',
-    description:
-      'ROI to decision makers, training and documentation for the team, and a handover clean enough that the system runs without me.',
-    receipt:
-      'Both production systems from my current role have been running since rollout.',
-  },
+ { title:'Watch the work',body:'Map the tasks, handoffs and workarounds with the people doing them. Define the outcome before choosing the tool.',evidence:'At Andercore, shadowing sales users exposed repetitive account research.' },
+ { title:'Build a bounded workflow',body:'Connect the existing systems. Decide where AI interprets information and where explicit rules or human review control the action.',evidence:'My task service validates structured plans before permitting external writes.' },
+ { title:'Make failure manageable',body:'Test incomplete inputs, incorrect decisions and interrupted operations. Give the user a clear way to recover.',evidence:'The integration checks cover missing dates, query immutability and retry recovery.' },
+ { title:'Earn everyday use',body:'Pilot with users, make corrections easy and train the process owner. Review both business outcomes and the effort left behind.',evidence:'My Salesforce delivery included UAT, localisation, embedded feedback, documentation and training.' },
 ];
-
-export function Approach() {
-  return (
-    <Section id="approach">
-      <AnimatedSection>
-        <h2 className="mb-2 text-xs font-medium uppercase tracking-widest text-text-muted">
-          Methodology
-        </h2>
-        <h3 className="mb-4 text-2xl font-semibold text-text-primary md:text-3xl">
-          How I Deliver AI Projects
-        </h3>
-        <p className="mb-12 max-w-xl text-sm text-text-secondary">
-          Anyone can demo a model. Getting a sales team, a support desk,
-          and their managers to adopt one is the hard part. This is the
-          playbook I run, each step with the receipt to prove it.
-        </p>
-      </AnimatedSection>
-
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
-        {steps.map((step, index) => (
-          <AnimatedSection key={step.number} delay={index * 0.08}>
-            <div className="rounded-xl border border-border-subtle bg-surface p-6">
-              <span className="text-2xl font-bold text-accent">
-                {step.number}
-              </span>
-              <h4 className="mt-3 text-base font-semibold text-text-primary">
-                {step.title}
-              </h4>
-              <p className="mt-2 text-sm leading-relaxed text-text-secondary">
-                {step.description}
-              </p>
-              <p className="mt-3 border-t border-border-subtle pt-3 font-mono text-xs leading-relaxed text-accent/80">
-                {step.receipt}
-              </p>
-            </div>
-          </AnimatedSection>
-        ))}
-      </div>
-    </Section>
-  );
-}
+export function Approach() {return <Section id="approach">
+ <p className="mono-label mb-3">How I deliver</p><h2 className="mb-4 max-w-2xl text-3xl font-semibold md:text-4xl">Own the outcome from discovery to everyday use.</h2><p className="mb-10 max-w-2xl text-sm leading-relaxed text-text-secondary">Business process knowledge, hands on configuration and AI supported implementation work together. I stay accountable for the workflow, its boundaries and whether it helps the team.</p>
+ <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">{steps.map((step,i)=><article key={step.title} className="border-t border-border-strong pt-5"><p className="mb-4 font-mono text-xs text-accent">0{i+1}</p><h3 className="mb-3 text-lg font-semibold">{step.title}</h3><p className="mb-5 text-sm leading-relaxed text-text-secondary">{step.body}</p><p className="text-xs leading-relaxed text-text-muted">{step.evidence}</p></article>)}</div>
+ <div className="mt-12 rounded-xl border border-border-strong bg-surface p-6 md:p-8"><p className="mono-label mb-3">A starting point for your team</p><h3 className="mb-3 text-2xl font-semibold">One useful pilot. A clear decision on what comes next.</h3><p className="mb-6 max-w-3xl text-sm leading-relaxed text-text-secondary">An illustrative first month, adapted to your systems, access and priorities. The aim is to establish a useful workflow and the evidence for expanding it.</p><ol className="grid gap-5 md:grid-cols-3"><li><span className="text-sm font-semibold text-accent">Discover and prioritise</span><p className="mt-2 text-sm leading-relaxed text-text-secondary">Choose one recurring process. Establish volume, manual effort, failure cost and the person accountable for the result.</p></li><li><span className="text-sm font-semibold text-accent">Build and test with users</span><p className="mt-2 text-sm leading-relaxed text-text-secondary">Deliver a narrow workflow with access boundaries, review points and a fallback. Test useful and difficult cases.</p></li><li><span className="text-sm font-semibold text-accent">Measure and decide</span><p className="mt-2 text-sm leading-relaxed text-text-secondary">Review completion time, corrections and continued use. Expand, improve or stop based on what the pilot shows.</p></li></ol></div>
+ </Section>;}

@@ -1,0 +1,46 @@
+{
+  "verifiedOn": "2026-10-11",
+  "suite": "Task service ModelTests",
+  "passed": 9,
+  "scope": "Offline tests against the implemented Python service. External Trello and Calendar calls are mocked. These checks do not measure live service uptime.",
+  "checks": [
+    "access requires sender and private or allowlisted chat",
+    "calendar retry uses same id",
+    "date only is local end of day",
+    "dst gap and fold rejected",
+    "event requires end",
+    "nonexistent day rejected",
+    "query cannot mutate",
+    "trello retry recovers existing card",
+    "vague date not fabricated"
+  ],
+  "examples": [
+    {
+      "id": "confirmed",
+      "title": "A complete request",
+      "input": "Schedule the weekly review on 15 October 2026, 14:00 to 14:30, Berlin time.",
+      "plan": "Create event · 15 Oct · 14:00 to 14:30 · Europe/Berlin",
+      "result": "Accepted by the service validator",
+      "detail": "The confirmed date and duration produce 2026-10-15T14:00:00+02:00. External writes are mocked in this example.",
+      "decision": "AI interprets the request; explicit validation controls whether an action is allowed."
+    },
+    {
+      "id": "clarify",
+      "title": "Missing information",
+      "input": "Schedule the weekly review on 15 October at 14:00.",
+      "plan": "Create event · start confirmed · end missing",
+      "result": "Blocked pending clarification",
+      "detail": "The service validator returns: Ask for event duration or end time. The workflow needs an end time before a calendar write can proceed.",
+      "decision": "Do not invent a meeting duration to make the workflow appear successful."
+    },
+    {
+      "id": "retry",
+      "title": "Recover an interrupted write",
+      "input": "A Trello create operation is retried after an interrupted response.",
+      "plan": "Check the persistent marker before another create",
+      "result": "Existing card recovered; no second create call",
+      "detail": "The test supplies an existing card through a mocked lookup. The integration reuses it and makes no POST to create another card.",
+      "decision": "Recover earlier work before retrying, so an uncertain response does not become a duplicate task."
+    }
+  ]
+}

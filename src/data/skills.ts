@@ -2,45 +2,51 @@ import { SkillGroup } from '@/types';
 
 export const skillGroups: SkillGroup[] = [
   {
-    category: 'LLMs & Agent Systems',
-    skills: [
-      'OpenAI GPT',
-      'Claude API',
-      'Google Gemini',
-      'Ollama (local models)',
-      'Multi agent orchestration',
-      'RAG & knowledge retrieval',
-      'Prompt engineering',
-    ],
+    "category": "AI tools & orchestration",
+    "skills": [
+      "Claude",
+      "Codex",
+      "OpenAI API",
+      "Ollama",
+      "MCP",
+      "Workflow evaluation"
+    ]
   },
   {
-    category: 'Engineering',
-    skills: [
-      'Python',
-      'TypeScript / JavaScript',
-      'FastAPI',
-      'React / Next.js',
-      'REST APIs',
-      'Git / CI/CD',
-    ],
+    "category": "Business systems & integration",
+    "skills": [
+      "Salesforce Sales Cloud, Service Cloud & Flow",
+      "Make",
+      "Zapier",
+      "n8n",
+      "REST APIs & webhooks",
+      "Sitetracker",
+      "Adobe Experience Manager"
+    ]
   },
   {
-    category: 'Automation & Integration',
-    skills: [
-      'n8n',
-      'Make.com',
-      'Webhook orchestration',
-      'Supabase',
-      'Streamlit',
-    ],
+    "category": "Product & delivery ownership",
+    "skills": [
+      "Process discovery",
+      "Stakeholder management",
+      "Commercial analysis",
+      "Roadmaps & requirements",
+      "Acceptance testing",
+      "Rollout & adoption"
+    ]
   },
   {
-    category: 'Enterprise Platforms',
-    skills: [
-      'Salesforce (Sales, Service, Flow, Apex)',
-      'JIRA / Confluence',
-      'Adobe Experience Manager',
-      'Sitetracker',
-    ],
-  },
+    "category": "Stack managed with AI support",
+    "skills": [
+      "Python",
+      "TypeScript / JavaScript",
+      "SQL & PostgreSQL",
+      "FastAPI",
+      "React / Next.js",
+      "Supabase",
+      "pandas / Streamlit",
+      "Pydantic",
+      "Docker / Hetzner"
+    ]
+  }
 ];

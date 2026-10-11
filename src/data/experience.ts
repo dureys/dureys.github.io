@@ -2,102 +2,125 @@ import { Experience } from '@/types';
 
 export const experiences: Experience[] = [
   {
-    id: 'current-role',
-    role: 'AI Automation Architect & Product Owner',
-    company: 'B2B Scale-up',
-    companyNote: 'confidential',
-    period: 'Aug 2024 to Present',
-    location: 'Berlin, Germany',
-    isCurrent: true,
-    highlight:
-      'Shipped a lead engine (40% more conversion) and a support AI (60% less triage time), both in production.',
-    summary:
-      'Leading generative AI and intelligent automation initiatives across sales, procurement, logistics, and support. Owning the full cycle from process discovery and solution design through implementation, validation against KPIs, and production rollout. Current role, so the work is described at the pattern level and the internal specifics stay confidential.',
-    achievements: [
-      'Ran discovery with sales leadership to find pipeline bottlenecks, then scoped and built an AI powered lead qualification engine inside the CRM the team already used. Validated against agreed KPIs over a structured pilot, presented results to the executive team, and secured sign off for full rollout. Outcome: 40% conversion uplift.',
-      'Mapped the support ticket lifecycle with the operations team, identified triage as the primary bottleneck, and designed a classify and route system with a verification step. Piloted on a subset of ticket categories, iterated on agent feedback, and scaled it. Outcome: 60% reduction in triage time.',
-      'Built internal productivity tooling including an intelligent alerting integration and a draft assist support bot. Defined success criteria with the team, ran a structured POC, then moved both into core operational infrastructure.',
-      'Own end to end delivery: process mapping, solution design, stakeholder alignment, technical build, user acceptance testing, documentation, training, and production handover.',
+    "id": "independent",
+    "role": "AI Systems Builder & Integrator",
+    "company": "Independent",
+    "companyNote": "Independent projects",
+    "period": "Dec 2025 to Present",
+    "location": "Berlin, Germany · Remote",
+    "isCurrent": true,
+    "highlight": "Deployed AI integrations, a working CRM prototype and a publishing product preparing for reader launch.",
+    "summary": "Builds and manages AI products and connected workflows. Owns requirements, tool selection, integration logic and acceptance, directing Claude and Codex for implementation.",
+    "achievements": [
+      "Deployed a task service connecting Telegram, OpenAI, PostgreSQL, Trello and Google Calendar, with validated actions, clarification and recovery after failed operations.",
+      "Built a CRM prototype connecting API account enrichment, segmentation and outreach drafting through structured agent handoffs and human review.",
+      "Built MCP retrieval and capture tools for an Obsidian knowledge environment used in ongoing research and project delivery.",
+      "Developing a fantasy football publishing product from official league data to analysis and designed magazines. The prototype is in testing before reader launch."
     ],
-    technologies: [
-      'LLMs',
-      'Claude',
-      'AI Agents',
-      'n8n',
-      'Make.com',
-      'REST APIs',
-    ],
+    "technologies": [
+      "Claude",
+      "Codex",
+      "OpenAI API",
+      "MCP",
+      "REST APIs",
+      "Workflow design",
+      "Acceptance testing"
+    ]
   },
   {
-    id: 'ubitricity',
-    role: 'Salesforce Product Manager',
-    company: 'Ubitricity GmbH',
-    companyNote: 'Shell',
-    period: 'Apr 2023 to Aug 2024',
-    location: 'Berlin, Germany',
-    highlight:
-      'Migrated a Shell subsidiary’s entire Salesforce org: 5 departments, phased rollout, minimal disruption.',
-    summary:
-      'Led a full scale digital transformation of the Salesforce environment for a Shell subsidiary. Owned the product roadmap, gathered business requirements across departments, managed cross functional stakeholders, and drove adoption through structured change management.',
-    achievements: [
-      'Led complete Salesforce environment migration from legacy systems: gathered business requirements across 5 departments, defined the migration roadmap, coordinated data migration, and managed phased rollout with minimal business disruption',
-      'Delivered Sales Cloud, Service Cloud, and Sitetracker implementations on time and within budget, managing dependencies across engineering, operations, and commercial teams',
-      'Designed and facilitated end user training programs for new Salesforce workflows, driving adoption across field teams and back office operations',
-      'Served as the primary bridge between engineering and business stakeholders, translating technical constraints into business language and vice versa to maintain executive alignment throughout the project',
+    "id": "family-business",
+    "role": "AI & Business Systems",
+    "company": "Dodanlı / Prizma Tekstil",
+    "companyNote": "Family business support",
+    "period": "Dec 2025 to Present",
+    "location": "Remote",
+    "isCurrent": true,
+    "highlight": "AI assisted export prospect research for a family textile and carpet business.",
+    "summary": "Supports a small family business operation alongside independent product building. The engagement is family business support.",
+    "achievements": [
+      "Completed AI assisted EU prospect research in approximately 30 minutes, compared with days of manual research.",
+      "Next implementation priorities: sales inquiry intake, quotation preparation and customer replies, supported by consistent product information, website inquiry forms and shared follow up tracking."
     ],
-    technologies: [
-      'Salesforce',
-      'Sales Cloud',
-      'Service Cloud',
-      'Sitetracker',
-      'Apex',
-      'Flow Builder',
-    ],
+    "technologies": [
+      "AI assisted research",
+      "Process mapping",
+      "Sales operations"
+    ]
   },
   {
-    id: 'accenture',
-    role: 'Digital Business Integration Analyst',
-    company: 'Accenture GmbH',
-    period: 'Jul 2021 to Apr 2023',
-    location: 'Berlin, Germany',
-    highlight:
-      'Took 10+ international markets live for global enterprise clients, coordinating across time zones.',
-    summary:
-      'Delivered enterprise scale digital transformation and integration projects for global clients in client facing roles. Managed multi market implementations with structured delivery methodology, stakeholder coordination, and change management across time zones.',
-    achievements: [
-      'Managed rollout planning, market requirement specification, and Go Live execution for 10+ international markets, ensuring each market met readiness criteria before launch',
-      'Set up and deployed 20+ forms using Adobe Experience Manager, coordinating acceptance testing with local market teams before each release',
-      'Implemented software configuration management plans for enterprise clients, establishing governance processes for change control and release management',
-      'Led cross functional stakeholder communication across multiple time zones, facilitating alignment between local teams and central program leadership',
+    "id": "andercore",
+    "role": "Salesforce & Automation Product Manager",
+    "company": "Andercore GmbH",
+    "period": "Aug 2024 to Aug 2025",
+    "location": "Berlin, Germany",
+    "highlight": "40% higher lead conversion and 60% less support triage time, alongside sole Salesforce ownership across five markets.",
+    "summary": "Sole internal Salesforce owner across five markets, aligning sales, customer service, supply, logistics and finance.",
+    "achievements": [
+      "40% higher lead conversion. Connected LLM account enrichment with Make and Salesforce after shadowing sales users. Localised the workflow and added a feedback widget to refine adoption.",
+      "60% less support triage time. Connected email, Make and OpenAI to classify category and subcategory and route requests to the responsible department. Expanded from selected pilot categories.",
+      "Commercial decisions and delivery. Built a customer wallet using purchase history and potential versus realised value, plus pricing support from inventory, logistics and margin inputs. Automated lead assignment and reminders; owned UAT, documentation and training."
     ],
-    technologies: [
-      'Adobe Experience Manager',
-      'Salesforce',
-      'JIRA',
-      'Agile',
-      'REST APIs',
-    ],
+    "technologies": [
+      "Salesforce",
+      "Make",
+      "OpenAI",
+      "Zapier",
+      "Claude",
+      "UAT"
+    ]
   },
   {
-    id: 'lemonone',
-    role: 'Process Manager & Salesforce Product Manager',
-    company: 'Lemon One GmbH',
-    period: 'Jul 2019 to Jun 2021',
-    location: 'Berlin, Germany',
-    highlight:
-      'Built the Salesforce processes a startup ran on daily: validation rules, approvals, automation flows.',
-    summary:
-      'Managed product backlogs and Salesforce process optimization. Designed validation rules, approval workflows, and automation flows while aligning commercial and technical requirements across teams.',
-    achievements: [
-      'Planned and developed Salesforce processes and flows supporting daily company operations, working directly with end users to validate each workflow before deployment',
-      'Designed custom validation rules and approval processes ensuring data integrity and policy compliance across the organization',
-      'Managed product backlogs, facilitating prioritization sessions between commercial and technical stakeholders to align business requirements with delivery objectives',
+    "id": "ubitricity",
+    "role": "Salesforce Product Manager",
+    "company": "ubitricity GmbH | Shell subsidiary",
+    "period": "Apr 2023 to Aug 2024",
+    "location": "Berlin, Germany",
+    "highlight": "Delivered a five department Salesforce rebuild with Sales Cloud, Service Cloud and Sitetracker, on time and within budget.",
+    "summary": "",
+    "achievements": [
+      "Owned the roadmap and requirements for a five department Salesforce rebuild. Delivered Sales Cloud, Service Cloud and Sitetracker on time and within budget, coordinating migration and a phased rollout.",
+      "Built Salesforce Flow approvals, lead routing and onboarding. Aligned engineering, operations and commercial teams; trained field and office users."
     ],
-    technologies: [
-      'Salesforce',
-      'Flow Builder',
-      'Apex',
-      'Process Automation',
-    ],
+    "technologies": [
+      "Sales Cloud",
+      "Service Cloud",
+      "Sitetracker",
+      "Salesforce Flow",
+      "Data migration"
+    ]
   },
+  {
+    "id": "accenture",
+    "role": "Digital Business Integration Analyst",
+    "company": "Accenture GmbH",
+    "period": "Jul 2021 to Apr 2023",
+    "location": "Berlin, Germany",
+    "highlight": "Delivered 20+ Adobe Experience Manager forms across 10+ markets, from requirements through go live and hypercare.",
+    "summary": "",
+    "achievements": [
+      "Delivered 20+ Adobe Experience Manager forms across 10+ markets, coordinating requirements, localisation, go live and hypercare. Defined configuration management and application requirements for a global consumer goods client."
+    ],
+    "technologies": [
+      "Adobe Experience Manager",
+      "Configuration management",
+      "International rollout"
+    ]
+  },
+  {
+    "id": "lemonone",
+    "role": "Process Manager and Salesforce Product Manager",
+    "company": "Lemon One GmbH",
+    "period": "Jul 2019 to Jun 2021",
+    "location": "Berlin, Germany",
+    "highlight": "Owned Salesforce process improvements, the product backlog and operational workflows.",
+    "summary": "",
+    "achievements": [
+      "Owned the Salesforce backlog and operational workflows. Implemented validation rules and approvals supporting sales policy and data integrity."
+    ],
+    "technologies": [
+      "Salesforce",
+      "Process automation",
+      "Backlog management"
+    ]
+  }
 ];

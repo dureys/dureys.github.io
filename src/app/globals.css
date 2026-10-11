@@ -24,6 +24,17 @@
     background-attachment: fixed;
   }
 
+  section[id] { scroll-margin-top: 6rem; }
+  a:focus-visible, button:focus-visible, summary:focus-visible, input:focus-visible {
+    outline: 2px solid #c8f169;
+    outline-offset: 4px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+
   /* Display font drives every heading site-wide */
   h1,
   h2,
