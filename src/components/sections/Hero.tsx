@@ -2,12 +2,12 @@ import { Button } from '@/components/ui/Button';
 import { MetricCard } from '@/components/ui/MetricCard';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
 import { ShaderBackground } from '@/components/ui/ShaderBackground';
-import { CommandConsole } from '@/components/ui/CommandConsole';
+import { roleFit } from '@/data/roleFit';
 import { personalInfo, metrics } from '@/data/personal';
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden px-6 pb-20 pt-32 md:pb-28 md:pt-40">
+    <section className="relative overflow-hidden px-6 pb-16 pt-28 md:pb-20 md:pt-28">
       {/* Animated WebGL aurora, full-bleed, fading into the page below */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <ShaderBackground className="h-full w-full" />
@@ -15,9 +15,9 @@ export function Hero() {
         <div className="absolute inset-0 border-b border-border-subtle" />
       </div>
 
-      <div className="mx-auto grid max-w-content items-start gap-x-12 gap-y-10 md:grid-cols-[1fr_minmax(420px,560px)]">
+      <div className="mx-auto grid max-w-content grid-cols-1 items-start gap-x-12 gap-y-10 lg:grid-cols-2">
         {/* Left: identity */}
-        <AnimatedSection>
+        <AnimatedSection className="min-w-0">
           <div className="mb-6 flex items-center gap-4">
             <div className="relative shrink-0">
               <img
@@ -29,41 +29,39 @@ export function Hero() {
               />
               <span className="absolute bottom-0.5 right-0.5 h-3 w-3 animate-pulse rounded-full border-2 border-background bg-accent" />
             </div>
-            <div>
+            <div className="min-w-0">
               <p className="mono-label flex items-center gap-3">
-                <span className="h-px w-6 bg-accent" />
-                AI Automation Architect
+                <span className="h-px w-6 shrink-0 bg-accent" />
+                {personalInfo.title}
               </p>
               <p className="mt-1.5 font-mono text-[11px] tracking-wide text-text-muted">
-                available for senior AI roles · Berlin
+                AI implementation · product ownership · Berlin
               </p>
             </div>
           </div>
 
-          <h1 className="mb-6 font-display text-5xl font-extrabold leading-[0.95] text-text-primary md:text-6xl lg:text-7xl">
+          <h1 className="mb-6 font-display text-5xl font-extrabold leading-[0.95] text-text-primary md:text-6xl">
             {personalInfo.name}
           </h1>
 
           <p className="mb-3 max-w-xl text-lg font-medium leading-snug text-text-primary md:text-xl">
-            Most people use AI as one extra person in a chat window. I run it
-            as a team.
+            I turn business processes into working AI systems.
           </p>
           <p className="mb-8 max-w-xl text-base leading-relaxed text-text-secondary">
-            Parallel agent sessions building separate parts at once, with me
-            as the reviewer on everything that ships. What took me three days
-            before AI ships in one. Six years mapping enterprise process at
-            Accenture, Shell and Salesforce taught me the part most AI
-            projects skip: which problems are worth automating, and which
-            quietly break when you try.
+            Seven years across business systems, product ownership and delivery.
+            I combine process knowledge with practical AI building: discovering
+            the problem, connecting the tools, testing the workflow and getting
+            people to use it. Experience across Andercore, ubitricity and Accenture.
           </p>
 
           <div className="mb-10 flex flex-wrap gap-3">
-            <Button href={personalInfo.cvUrl} variant="primary">
-              Download CV
+            <Button href="#selected-work" variant="primary">
+              Explore selected work
             </Button>
-            <Button href="#contact" variant="secondary">
-              Get in Touch
+            <Button href="mailto:durace.o@gmail.com?subject=AI%20role%20discussion" variant="secondary">
+              Discuss an AI role
             </Button>
+            <a href={personalInfo.cvUrl} className="inline-flex items-center px-2 py-3 text-sm text-text-secondary underline underline-offset-4">Download CV ↓</a>
           </div>
 
           <div className="grid grid-cols-2 gap-x-8 gap-y-6 border-t border-border-subtle pt-8 sm:grid-cols-4">
@@ -77,17 +75,9 @@ export function Hero() {
           </div>
         </AnimatedSection>
 
-        {/* Right: the system you can operate */}
-        <AnimatedSection delay={0.15}>
-          <CommandConsole />
-          <p className="mt-3 text-center font-mono text-[11px] tracking-wide text-text-muted">
-            <span className="text-accent">$</span> this portfolio is a system. talk to it.
-          </p>
-          <div className="mt-4 flex justify-center">
-            <Button href="/systems/" variant="secondary" size="sm">
-              $ open system_registry ▸
-            </Button>
-          </div>
+        {/* Role fit stays visible without operating the optional console. */}
+        <AnimatedSection delay={0.15} className="min-w-0">
+          <div className="rounded-xl border border-border-strong bg-surface/90 p-6 md:p-8"><p className="mono-label mb-6">Where I contribute</p><div className="space-y-5">{roleFit.map((role,i)=><a key={role.title} href={role.href} className="group block border-t border-border-subtle pt-5"><p className="mb-2 flex gap-3 text-lg font-semibold group-hover:text-accent"><span className="font-mono text-sm text-accent">0{i+1}</span>{role.title}<span className="ml-auto text-accent">↗</span></p><p className="pl-8 text-sm leading-relaxed text-text-secondary">{role.description}</p></a>)}</div><p className="mt-7 border-t border-border-subtle pt-5 text-xs leading-relaxed text-text-muted">Berlin · English C1 · German B1<br/>Interested in roles with substantial AI ownership.</p></div>
         </AnimatedSection>
       </div>
     </section>

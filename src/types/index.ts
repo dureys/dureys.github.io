@@ -33,12 +33,7 @@ export interface Tradeoff {
 }
 
 export interface DeepDive {
-  status:
-    | 'In production'
-    | 'Running daily'
-    | 'Built'
-    | 'In development'
-    | 'Reference design';
+  status: 'Enterprise delivery' | 'Deployed project' | 'In use' | 'Working prototype' | 'Prototype in testing' | 'Reference design';
   /** When it was built or since when it runs, only where verifiable. */
   timeframe?: string;
   /** True when the work is covered by an NDA and described at pattern level. */

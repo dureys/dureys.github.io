@@ -14,9 +14,8 @@ export function Experience() {
           Professional Journey
         </h3>
         <p className="mb-12 max-w-xl text-sm text-text-secondary">
-          Six years, four companies, one throughline: turning messy enterprise
-          process into systems that run themselves. Click any role for the
-          full story.
+          Enterprise delivery, family business support and independent AI
+          building. Expand a role for the scope, tools and outcomes.
         </p>
       </AnimatedSection>
 

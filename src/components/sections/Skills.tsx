@@ -14,12 +14,12 @@ export function Skills() {
           The Working Set
         </h3>
         <p className="mb-12 max-w-xl text-sm text-text-secondary">
-          What I actually ship with, not every logo I have ever touched.
-          If it is on this list, it has been in production.
+          I own process design, integration choices and delivery. Claude and
+          Codex support implementation across the programming stack below.
         </p>
       </AnimatedSection>
 
-      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
         {skillGroups.map((group, index) => (
           <AnimatedSection key={group.category} delay={index * 0.05}>
             <SkillGroup group={group} />
